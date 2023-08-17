@@ -2,6 +2,9 @@
   color: var(--black-color);
   transition: var(--transition);
 
+  &_white {
+    color: var(--grey-color);
+  }
   &:hover, &:active, &:focus {
     color: var(--link-color);
   }

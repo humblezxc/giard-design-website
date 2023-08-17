@@ -8,9 +8,9 @@ header {
     align-items: center;
   }
 
-  .navigation ul {
+  .header__navigation ul {
     display: flex;
-    gap: 48px;
+    gap: calc(var(--gap) * 2);
 
     font: var(--smaller-font)
   }

@@ -3,14 +3,28 @@
 html {
   background-color: aqua;
   color: var(--black-color);
+  font: var(--font);
 }
-body, ul, li, p, h1, h2, h3, h4, h5, h6 {
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+body, ul, li, p, h1, h2, h3, h4, h5, h6, button {
   margin: 0;
   padding: 0;
 }
 
 a {
   text-decoration: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
 }
 
 li {

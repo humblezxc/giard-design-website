@@ -1,0 +1,30 @@
+.button {
+  --size: 50px;
+  color: var(--grey-color);
+  background-color: var(--green-color);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0 var(--gap);
+
+  //padding: 10px 24px 12px 24px;
+
+  height: var(--size);
+  border: 2px solid var(--green-color);
+  transition: var(--transition);
+  border-radius: var(--size);
+  font: var(--font);
+  cursor: pointer;
+
+  &:hover, &:active, &:focus {
+    border-color: var(--green-color);
+    background-color: var(--grey-color);
+    color: var(--green-color);
+
+    svg {
+      fill: var(--grey-color);
+    }
+  }
+}
