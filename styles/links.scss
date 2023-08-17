@@ -5,7 +5,7 @@
   &_white {
     color: var(--grey-color);
   }
-  &:hover, &:active, &:focus {
-    color: var(--link-color);
+  &:hover, &:active, &:focus, &_active {
+    color: var(--green-color);
   }
 }
