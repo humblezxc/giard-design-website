@@ -27,4 +27,9 @@
       fill: var(--grey-color);
     }
   }
+
+  &_transparent {
+    background-color: transparent;
+    color: var(--green-color);
+  }
 }
