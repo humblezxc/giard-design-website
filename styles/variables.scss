@@ -1,13 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@500&display=swap');
+
 //breakpoints
 $bigger-mobile: 576px;
 $tablet: 768px;
 $desktop: 1200px;
 $bigger-desktop: 1200px;
+$biggest-desktop: 1400px;
 
 :root {
   //font
   --smaller-font: 400 14px 'Inter', sans-serif;
   --font: 400 16px 'Inter', sans-serif;
+  --montserrat-font: 500 48px 'Montserrat', sans-serif;
+  --montserrat-bigger-font: 500 60px 'Montserrat', sans-serif;
 
   --transition: 0.3s;
   --gap: 24px;

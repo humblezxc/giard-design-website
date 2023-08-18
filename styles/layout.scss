@@ -21,4 +21,7 @@ header, main, footer {
   @media (min-width: v.$bigger-desktop) {
     width: 1320px;
   }
+  @media (min-width: v.$biggest-desktop) {
+    width: 1620px;
+  }
 }
