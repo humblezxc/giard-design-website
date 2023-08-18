@@ -1,0 +1,7 @@
+.text {
+  font: var(--font);
+
+  &_biggest{
+    font: var(--montserrat-bigger-font);
+  }
+}
