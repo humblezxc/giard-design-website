@@ -26,6 +26,9 @@ footer {
     &_double-gap {
       gap: calc(var(--gap) * 2);
     }
+    &_smaller-gap {
+      gap: calc(var(--gap) * 0.67)
+    }
   }
 
   .footer__center {
@@ -37,7 +40,6 @@ footer {
   }
   .footer__center, .footer__bottom {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
