@@ -37,4 +37,8 @@
     border: 2px solid var(--grey-color);
     color: var(--grey-color);
   }
+  &_white {
+    background-color: var(--grey-color);
+    color: var(--green-color);
+  }
 }

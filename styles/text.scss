@@ -7,6 +7,9 @@
   &_smallest-montserrat{
     font: var(--montserrat-smaller-font);
   }
+  &_montserrat-regular {
+    font: var(--montserrat-regular);
+  }
   &_montserrat {
     font: var(--montserrat-font);
   }
@@ -19,6 +22,10 @@
   }
   &_letter-spacing-p {
     letter-spacing: -1%;
+  }
+  &_italic-biggest {
+    font: var(--biggest-font);
+    font-style: italic;
   }
   &_italic-bigger {
     font: var(--bigger-font);
