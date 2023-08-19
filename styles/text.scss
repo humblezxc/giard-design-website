@@ -1,7 +1,27 @@
 .text {
   font: var(--font);
 
-  &_biggest{
+  &_smaller-font {
+    font: var(--smaller-font);
+  }
+  &_smallest-montserrat{
+    font: var(--montserrat-smaller-font);
+  }
+  &_montserrat {
+    font: var(--montserrat-font);
+  }
+  &_biggest-montserrat{
     font: var(--montserrat-bigger-font);
+  }
+
+  &_line-height-p {
+    line-height: 150%;
+  }
+  &_letter-spacing-p {
+    letter-spacing: -1%;
+  }
+  &_italic-bigger {
+    font: var(--bigger-font);
+    font-style: italic;
   }
 }
