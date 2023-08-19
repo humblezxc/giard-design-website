@@ -32,4 +32,9 @@
     background-color: transparent;
     color: var(--green-color);
   }
+
+  &_border-white {
+    border: 2px solid var(--grey-color);
+    color: var(--grey-color);
+  }
 }
