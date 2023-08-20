@@ -5,11 +5,12 @@
 $bigger-mobile: 576px;
 $tablet: 768px;
 $desktop: 1200px;
-$bigger-desktop: 1200px;
-$biggest-desktop: 1400px;
+$bigger-desktop: 1440px;
+$biggest-desktop: 1680px;
 
 :root {
   //font
+  --smallest-font: 400 12px 'Inter', sans-serif;
   --smaller-font: 400 14px 'Inter', sans-serif;
   --font: 400 16px 'Inter', sans-serif;
   --biggest-font: 500 40px 'Inter', sans-serif;

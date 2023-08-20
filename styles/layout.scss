@@ -1,4 +1,4 @@
-@use "variables" as v;
+@use "variables" as var;
 
 header, main, footer {
   display: flex;
@@ -9,19 +9,19 @@ header, main, footer {
 .container {
   width: 100%;
 
-  @media (min-width: v.$bigger-mobile) {
+  @media (min-width: var.$bigger-mobile) {
     width: 540px;
   }
-  @media (min-width: v.$tablet) {
+  @media (min-width: var.$tablet) {
     width: 720px;
   }
-  @media (min-width: v.$desktop) {
+  @media (min-width: var.$desktop) {
     width: 1170px;
   }
-  @media (min-width: v.$bigger-desktop) {
-    width: 1320px;
+  @media (min-width: var.$bigger-desktop) {
+    width: 1262px;
   }
-  @media (min-width: v.$biggest-desktop) {
-    width: 1620px;
+  @media (min-width: var.$biggest-desktop) {
+    width: 1520px;
   }
 }
