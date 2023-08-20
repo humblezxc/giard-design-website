@@ -1,3 +1,5 @@
+@use "variables" as var;
+
 footer {
   margin-top: auto;
   background-color: var(--black-color);
@@ -6,6 +8,10 @@ footer {
   .footer__container {
     display: flex;
     flex-direction: column;
+
+    @media (min-width: var.$bigger-desktop) {
+      width: var.$bigger-container;
+    }
   }
 
   .footer__top {
@@ -26,6 +32,7 @@ footer {
     &_double-gap {
       gap: calc(var(--gap) * 2);
     }
+
     &_smaller-gap {
       gap: calc(var(--gap) * 0.67)
     }
@@ -35,9 +42,11 @@ footer {
     margin-top: 62px;
     margin-bottom: 120px;
   }
+
   .footer__bottom {
     margin-bottom: 80px;
   }
+
   .footer__center, .footer__bottom {
     display: flex;
     justify-content: space-between;

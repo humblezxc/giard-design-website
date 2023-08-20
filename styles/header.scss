@@ -1,18 +1,134 @@
+@use "variables" as var;
+
 header {
-  background-color: #fff;
-  padding: 24px 0;
+  --top-radius: 30px;
+
+  background-color: var(--white-color);
+
+  padding: var(--gap) 0;
 
   .header__container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+
+    gap: var(--gap);
+    padding: calc(var(--gap) * 2) var(--gap);
+    border-bottom: 2px solid var(--black-color);
+
+    @media (min-width: var.$tablet) {
+      flex-direction: row;
+      max-height: 24px;
+      border: none;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0;
+      gap: var(--gap);
+    }
   }
 
-  .header__navigation ul {
+  .header__triggers {
     display: flex;
-    gap: calc(var(--gap) * 2);
+    justify-content: space-between;
+  }
 
-    font: var(--smaller-font)
+  .header__mobile-trigger {
+    transition: var(--transition);
+
+    svg {
+      width: 35px;
+      height: 35px;
+    }
+
+    &:hover,
+    &:focus,
+    &:active,
+    &_active {
+      svg {
+        fill: var(--green-color);
+      }
+    }
+  }
+
+  .header__mobile-trigger {
+    @media (min-width: var.$tablet) {
+      display: none;
+    }
+  }
+
+  nav {
+    position: relative;
+  }
+
+  .header__svg_tablet {
+    display: none;
+
+    @media (min-width: var.$tablet) {
+      display: inline;
+    }
+  }
+
+  ul .header__link_tablet {
+    @media (min-width: var.$tablet) {
+      --top: 27px;
+
+      position: absolute;
+      left: -33px;
+      width: 120px;
+      height: var(--top);
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      z-index: 1;
+
+      &_one {
+        top: var(--top);
+      }
+      &_two {
+        top: calc(var(--top) * 2)
+      }
+      &_three {
+        top: calc(var(--top) * 3)
+      }
+    }
   }
 }
 
+.header__navigation {
+  ul {
+    flex-wrap: wrap;
+    column-gap: var(--gap);
+  }
+
+  li {
+    width: 80px;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  @media (min-width: var.$tablet) {
+    position: relative;
+
+    ul {
+      flex-wrap: nowrap;
+    }
+
+    li {
+      width: inherit;
+    }
+  }
+}
+
+.navigation ul {
+  display: flex;
+  column-gap: calc(var(--gap) * 2);
+  row-gap: calc(var(--gap) / 2);
+  font: var(--smaller-font);
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
