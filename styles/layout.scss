@@ -7,10 +7,12 @@ header, main, footer {
 }
 
 .container {
-  width: 100%;
+  width: calc(100% - var(--gap) * 2);
+  padding: var(--gap);
 
   @media (min-width: var.$bigger-mobile) {
-    width: 540px;
+    width: 510px;
+    padding: inherit;
   }
   @media (min-width: var.$tablet) {
     width: 720px;
