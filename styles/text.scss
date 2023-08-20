@@ -1,32 +1,50 @@
 .text {
   font: var(--font);
 
+  &_smallest-font {
+    font: var(--smallest-font);
+  }
+
   &_smaller-font {
     font: var(--smaller-font);
   }
-  &_smallest-montserrat{
+
+  &_smallest-montserrat {
     font: var(--montserrat-smaller-font);
   }
+
   &_montserrat-regular {
     font: var(--montserrat-regular);
   }
+
   &_montserrat {
     font: var(--montserrat-font);
   }
-  &_biggest-montserrat{
+
+  &_biggest-montserrat {
     font: var(--montserrat-bigger-font);
   }
 
-  &_line-height-p {
-    line-height: 150%;
+  &_line-height-h-span {
+    line-height: 115%;
+    letter-spacing: initial;
   }
-  &_letter-spacing-p {
-    letter-spacing: -1%;
+
+  &_line-height-h {
+    line-height: 115%;
+    letter-spacing: -0.03em;
   }
+
+
+  &_letter-spacing-italic-biggest {
+    letter-spacing: 1px;
+  }
+
   &_italic-biggest {
     font: var(--biggest-font);
     font-style: italic;
   }
+
   &_italic-bigger {
     font: var(--bigger-font);
     font-style: italic;

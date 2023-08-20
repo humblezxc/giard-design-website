@@ -1,21 +1,29 @@
+@use "styles/variables" as var;
+
 .offer {
   width: 100%;
   background-color: var(--grey-color);
 
   &__container {
     width: 100%;
+
     display: flex;
     flex-direction: column;
     align-items: center;
+
     gap: calc(var(--gap) * 4);
+
     padding: 120px 0 160px 0;
   }
 
   &__content-top {
-    width: 1040px;
     display: flex;
     flex-direction: column;
     gap: var(--gap);
+
+    @media (min-width: var.$bigger-desktop) {
+      width: var.$bigger-container;
+    }
   }
 
   &__content-top__text {
@@ -24,10 +32,18 @@
     gap: calc(var(--gap) * 1.5);
   }
 
+  h3 {
+    line-height: 115%;
+    letter-spacing: -0.05em;
+  }
+
   &__cards {
+    --padding: 88px;
+    width: calc(100% - calc(var(--padding) * 2));
     display: flex;
-    justify-content: center;
-    gap: calc(var(--gap) * 2.67);
+    justify-content: space-between;
+
+    padding: 0 88px;
   }
 
   &__card {
@@ -55,15 +71,19 @@
     gap: var(--gap);
   }
 
-  &__card-text{
+  &__card-text {
     display: flex;
     flex-direction: column;
     gap: calc(var(--gap) * 0.5);
   }
+
   &__card-link {
     border-bottom: 1px solid var(--green-color);
   }
+
   a {
     margin-top: auto;
+    line-height: 150%;
+    letter-spacing: initial;
   }
 }
