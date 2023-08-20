@@ -6,6 +6,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-height: 24px;
   }
 
   .header__navigation ul {
@@ -13,6 +14,10 @@ header {
     gap: calc(var(--gap) * 2);
 
     font: var(--smaller-font)
+  }
+  li {
+    display: flex;
+    align-items: center;
   }
 }
 
