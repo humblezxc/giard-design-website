@@ -29,6 +29,20 @@ $bigger-container: 1040px;
   --transition: 0.3s;
   --gap: 16px;
 
+  @media (min-width: $bigger-mobile) {
+    --smallest-font: 400 10px 'Inter', sans-serif;
+    --smaller-font: 400 13px 'Inter', sans-serif;
+    --font: 400 15px 'Inter', sans-serif;
+    --font-biggest-desktop: 400 16px 'Inter', sans-serif;
+    --biggest-font: 500 34px 'Inter', sans-serif;
+    --bigger-font: 500 38px 'Inter', sans-serif;
+    --montserrat-smaller-font: 500 20px 'Montserrat', sans-serif;
+    --montserrat-regular: 400 34px 'Montserrat', sans-serif;
+    --montserrat-font: 500 38px 'Montserrat', sans-serif;
+    --montserrat-bigger-font: 500 48px 'Montserrat', sans-serif;
+    --montserrat-bigger-font-biggest-desktop: 500 56px 'Montserrat', sans-serif;
+  }
+
   @media (min-width: $tablet) {
     --smallest-font: 400 12px 'Inter', sans-serif;
     --smaller-font: 400 14px 'Inter', sans-serif;

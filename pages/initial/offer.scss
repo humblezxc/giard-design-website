@@ -5,21 +5,31 @@
   background-color: var(--grey-color);
 
   &__container {
-    width: 100%;
+    width: calc(100% - var(--gap) * 2);
 
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 
-    gap: calc(var(--gap) * 4);
+    gap: var(--gap);
 
-    padding: 120px 0 160px 0;
+    @media (min-width: var.$bigger-mobile) {
+      width: 100%;
+      padding: 60px 0 80px 0;
+      gap: calc(var(--gap) * 2);
+    }
+
+    @media (min-width: var.$tablet) {
+      padding: 120px 0 160px 0;
+      gap: calc(var(--gap) * 4);
+    }
   }
 
   &__content-top {
     display: flex;
     flex-direction: column;
-    gap: var(--gap);
+    gap: calc(var(--gap) * 0.64);
 
     @media (min-width: var.$bigger-desktop) {
       width: var.$bigger-container;
@@ -29,7 +39,20 @@
   &__content-top__text {
     display: flex;
     flex-direction: column;
-    gap: calc(var(--gap) * 1.5);
+    gap: var(--gap);
+
+    br {
+      display: none;
+    }
+
+    @media (min-width: var.$bigger-mobile) {
+      br {
+        display: block;
+      }
+    }
+    @media (min-width: var.$tablet) {
+      gap: calc(var(--gap) * 1.5);
+    }
   }
 
   h3 {
@@ -39,36 +62,98 @@
 
   &__cards {
     --padding: 88px;
-    width: calc(100% - calc(var(--padding) * 2));
-    display: flex;
-    justify-content: space-between;
 
-    padding: 0 88px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    column-gap: calc(var(--gap) * 2);
+    row-gap: calc(var(--gap) / 2);
+
+    @media (min-width: var.$bigger-mobile) {
+      gap: var(--gap);
+    }
+
+    @media (min-width: var.$tablet) {
+      flex-direction: row;
+    }
+    @media (min-width: var.$bigger-tablet) {
+      width: calc(100% - calc(var(--padding) * 2));
+      gap: calc(var(--gap) * 1.3);
+    }
+    @media (min-width: var.$desktop) {
+      gap: calc(var(--gap) * 2);
+    }
+    @media (min-width: var.$bigger-desktop) {
+      justify-content: space-between;
+      gap: calc(var(--gap) * 2.67);
+    }
   }
 
   &__card {
-    --height: 370px;
-    --top-padding: 48px;
+    --height: 240px;
+    --width: 220px;
+    --top-padding: 16px;
+    --left-padding: 14px;
     background-color: var(--white-color);
     height: calc(var(--height) - 2 * var(--top-padding));
+    width: calc(var(--width) - 2 * var(--left-padding));
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-self: flex-start;
 
-    padding: 48px 40px;
+    padding: 16px 14px;
     border-radius: 30px;
+    column-gap: calc(var(--gap) * 2);
+
+    br {
+      display: none;
+    }
+
+    @media (min-width: var.$bigger-mobile) {
+      padding: 24px 20px;
+      min-height: 214px;
+      min-width: 238px;
+    }
+    @media (min-width: var.$tablet) {
+      padding: 36px 30px;
+      min-height: 234px;
+      min-width: 258px;
+
+    }
+    @media (min-width: var.$bigger-tablet) {
+      min-height: 274px;
+      min-width: 298px;
+      br {
+        display: block;
+      }
+    }
+    @media (min-width: var.$desktop) {
+      padding: 48px 40px;
+    }
   }
 
-  p, h3, a {
+  p {
+    line-height: 150%;
+  }
+
+  p, h3, h2, a {
     align-self: flex-start;
   }
 
   &__card-content {
-    --gap: 32px;
     display: flex;
     flex-direction: column;
-    gap: var(--gap);
+
+    svg {
+      width: calc(100% / 8);
+      height: calc(100% / 8);
+    }
+
+    gap: calc(var(--gap) * 1.3);
   }
 
   &__card-text {
@@ -82,7 +167,6 @@
   }
 
   a {
-    margin-top: auto;
     line-height: 150%;
     letter-spacing: initial;
   }
