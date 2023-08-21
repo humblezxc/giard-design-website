@@ -10,6 +10,7 @@
 
   &__container {
     width: 100%;
+    position: relative;
     display: flex;
     flex-direction: column;
 
@@ -25,6 +26,33 @@
       gap: calc(var(--gap) * 4);
     }
 
+  }
+  &__gradient {
+    position: absolute;
+    bottom: 0;
+    height: 50%;
+    width: 100%;
+    content: "";
+    background: linear-gradient(to top,
+            rgba(220, 193, 171, 1) 10%,
+            rgba(220, 193, 171, 0) 100%
+    );
+    visibility: visible;
+  }
+
+  &__button {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 69px;
+    z-index: 23;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+
+    cursor: pointer;
   }
   &__header {
     display: flex;
