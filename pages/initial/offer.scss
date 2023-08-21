@@ -1,5 +1,5 @@
 @use "styles/variables" as var;
-
+@use "styles/mixins" as mix;
 .offer {
   width: 100%;
   background-color: var(--grey-color);
@@ -31,9 +31,7 @@
     flex-direction: column;
     gap: calc(var(--gap) * 0.64);
 
-    @media (min-width: var.$bigger-desktop) {
-      width: var.$bigger-container;
-    }
+    @include mix.container-size;
   }
 
   &__content-top__text {

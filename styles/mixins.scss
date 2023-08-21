@@ -1,0 +1,22 @@
+@use "variables" as var;
+
+@mixin container-size {
+  //@media (min-width: var.$bigger-mobile) {
+  //  width: var.$bigger-mobile-container;
+  //}
+  //@media (min-width: var.$tablet) {
+  //  width: var.$tablet-container;
+  //}
+  @media (min-width: var.$bigger-tablet) {
+    width: var.$bigger-tablet-container;
+  }
+  @media (min-width: var.$desktop) {
+    width: var.$desktop-container;
+  }
+  @media (min-width: var.$bigger-desktop) {
+    width: var.$bigger-desktop-container;
+  }
+  @media (min-width: var.$biggest-desktop) {
+    width: var.$biggest-desktop-container;
+  }
+}
