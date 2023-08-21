@@ -40,7 +40,11 @@
     border: 2px solid var(--grey-color);
     color: var(--grey-color);
   }
-
+  &_black {
+    background-color: transparent;
+    border: 2px solid var(--black-color);
+    color: var(--black-color);
+  }
   &_white {
     background-color: var(--grey-color);
     color: var(--green-color);
