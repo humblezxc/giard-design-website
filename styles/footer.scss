@@ -1,11 +1,13 @@
 @use "variables" as var;
-
+@use "mixins" as mix;
 footer {
   margin-top: auto;
   background-color: var(--black-color);
   color: var(--grey-color);
 
   .footer__container {
+    @include mix.container-size;
+
     display: flex;
     flex-direction: column;
 
