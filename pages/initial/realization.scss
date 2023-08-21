@@ -1,0 +1,68 @@
+@use "styles/variables" as var;
+.realization {
+  width: 100%;
+  background-color: var(--beige-color);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+  &__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    padding: 10px 0;
+    gap: var(--gap);
+    @media (min-width: var.$tablet) {
+      padding: 60px 0 22px 0;
+      gap: calc(var(--gap) * 2);
+    }
+
+    @media (min-width: var.$desktop) {
+      padding: 120px 0 44px 0;
+      gap: calc(var(--gap) * 4);
+    }
+
+  }
+  &__header {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--gap) * 0.67);
+
+    @media (min-width: var.$tablet) {
+      padding-left: 80px;
+    }
+
+    @media (min-width: var.$desktop) {
+      padding-left: 160px;
+    }
+  }
+
+  &__content {
+    width: 100%;
+
+    .grid-item {
+      display: flex;
+      width: 31.320%;
+      margin-bottom: 10px;
+      img {
+        width: 100%;
+      }
+      @media (min-width: var.$tablet) {
+        margin-bottom: 20px;
+      }
+
+      @media (min-width: var.$desktop) {
+        margin-bottom: 30px;
+      }
+    }
+    .grid-item--width2 {
+      width: 31.3895%;
+    }
+    .gutter-sizer {
+      width: 3%;
+    }
+  }
+}
