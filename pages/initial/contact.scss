@@ -6,7 +6,6 @@
   width: 100%;
 
 
-
   padding: 15px 0;
 
   @media (min-width: var.$bigger-mobile) {
@@ -82,8 +81,10 @@
       display: none;
     }
 
-    @media (min-width: var.$desktop) {
+    @media (min-width: var.$tablet) {
       flex-direction: column;
+    }
+    @media (min-width: var.$desktop) {
       column-gap: var(--gap);
       br {
         display: block;
