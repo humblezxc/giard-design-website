@@ -3,6 +3,11 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "root": "./dist",
+  "clean_urls": true,
+  "routes": {
+    "/**": "index.html"
+  },
   "scripts": {
     "start": "vite --open",
     "build": "vite build",
