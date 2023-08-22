@@ -18,18 +18,46 @@ header, main, footer {
     width: 720px;
   }
   @media (min-width: var.$bigger-tablet) {
-    width: 940px;
+    width: 920px;
   }
   @media (min-width: var.$desktop) {
-    width: 1170px;
+    width: 1070px;
   }
   @media (min-width: var.$bigger-desktop) {
-    width: 1262px;
+    width: 1220px;
+  }
+  @media (min-width: var.$biggest-desktop) {
+    width: 1440px;
+  }
+  @media (min-width: var.$huge-desktop) {
+    width: 1640px;
+  }
+}
+
+.container_with-img {
+  width: calc(100% - var(--gap) * 2);
+  padding: var(--gap);
+
+  @media (min-width: var.$bigger-mobile) {
+    width: 543px;
+    padding: inherit;
+  }
+  @media (min-width: var.$tablet) {
+    width: 744px;
+  }
+  @media (min-width: var.$bigger-tablet) {
+    width: 956px;
+  }
+  @media (min-width: var.$desktop) {
+    width: 1135px;
+  }
+  @media (min-width: var.$bigger-desktop) {
+    width: 1330px;
   }
   @media (min-width: var.$biggest-desktop) {
     width: 1520px;
   }
   @media (min-width: var.$huge-desktop) {
-    width: 1640px;
+    width: 1770px;
   }
 }

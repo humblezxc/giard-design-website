@@ -2,9 +2,16 @@
 
 .about {
   width: 100%;
-  //display: flex;
   background-color: var(--green-color);
   color: var(--grey-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (min-width: var.$bigger-tablet) {
+    gap: calc(var(--gap) * 2.67);
+    justify-content: flex-start;
+  }
 
   &__container {
     display: flex;
@@ -16,7 +23,7 @@
   }
 
   &__left {
-    @media (min-width: var.$tablet) {
+    @media (min-width: var.$bigger-tablet) {
       flex: 1;
     }
 
@@ -26,89 +33,33 @@
       object-fit: cover;
       display: none;
 
-      @media (min-width: var.$tablet) {
+      @media (min-width: var.$bigger-tablet) {
         display: block;
       }
     }
-
   }
 
   &__right {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
+
     gap: var(--gap);
 
     padding: var(--gap);
     @media (min-width: var.$bigger-mobile) {
       width: 100%;
-      padding: 40px;
+      padding: 40px 0 40px 25px;
       gap: calc(var(--gap) * 3);
     }
     @media (min-width: var.$tablet) {
       flex: 1;
-      padding: 46px 34px;
+      padding: 46px 0 46px 40px;
       gap: calc(var(--gap) * 3);
-
-    }
-    //    @media (min-width: var.$tablet) {
-    //      padding: 46px 0 46px 23px;
-    //      gap: calc(var(--gap) * 3);
-    //    }
-    //    @media (min-width: var.$bigger-tablet) {
-    //      padding: 46px 0 46px 33px;
-    //      gap: calc(var(--gap) * 4);
-    //    }
-
-  }
-
-  //  &__right {
-  //    display: flex;
-  //    flex-direction: column;
-  //    justify-content: center;
-  //    align-items: center;
-  //    gap: var(--gap);
-  //    @media (min-width: var.$bigger-mobile) {
-  //      width: 100%;
-  //      padding: 25px 0;
-  //      gap: calc(var(--gap) * 3);
-  //    }
-  //    @media (min-width: var.$tablet) {
-  //      padding: 46px 0 46px 23px;
-  //      gap: calc(var(--gap) * 3);
-  //    }
-  //    @media (min-width: var.$bigger-tablet) {
-  //      padding: 46px 0 46px 33px;
-  //      gap: calc(var(--gap) * 4);
-  //    }
-  //  }
-
-  &__content {
-    display: flex;
-    flex-direction: column;
-    gap: calc(var(--gap) * 0.67);
-
-    @media (min-width: var.$tablet) {
-      gap: var(--gap);
-    }
-    @media (min-width: var.$desktop) {
-      gap: calc(var(--gap) * 1.67);
     }
   }
 
-  &__content {
-    display: flex;
-    flex-direction: column;
-    gap: calc(var(--gap) * 0.67);
-
-    @media (min-width: var.$tablet) {
-      gap: var(--gap);
-    }
-    @media (min-width: var.$desktop) {
-      gap: calc(var(--gap) * 1.67);
-    }
-  }
   &__content {
     display: flex;
     flex-direction: column;
@@ -120,6 +71,18 @@
     }
     @media (min-width: var.$desktop) {
       gap: calc(var(--gap) * 4);
+    }
+  }
+  &__company {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--gap) * 0.67);
+
+    @media (min-width: var.$tablet) {
+      gap: var(--gap);
+    }
+    @media (min-width: var.$desktop) {
+      gap: calc(var(--gap) * 1.67);
     }
   }
 
@@ -154,94 +117,3 @@
     }
   }
 }
-
-//.about {
-//  width: 100%;
-//  background-color: var(--green-color);
-//  color: var(--grey-color);
-//
-//  display: flex;
-//  align-items: center;
-//  justify-content: center;
-//
-//  @media (min-width: var.$bigger-tablet) {
-//    display: block;
-//  }
-//
-//  &__container {
-//    //width: 100%;
-//    display: flex;
-//    flex-direction: column;
-//    gap: calc(var(--gap) * 2.67);
-//
-//    @media (min-width: var.$tablet) {
-//      flex-direction: row;
-//    }
-//    @media (min-width: var.$desktop) {
-//      justify-content: space-between;
-//    }
-//  }
-//
-//  &__left {
-//    display: flex;
-//  }
-//
-//  &__img {
-//    width: 100%;
-//
-//    display: none;
-//
-//    @media (min-width: var.$bigger-tablet) {
-//      display: block;
-//    }
-//  }
-//
-//  &__right {
-//    display: flex;
-//    flex-direction: column;
-//    justify-content: center;
-//    align-items: center;
-//    gap: var(--gap);
-//    @media (min-width: var.$bigger-mobile) {
-//      width: 100%;
-//      padding: 25px 0;
-//      gap: calc(var(--gap) * 3);
-//    }
-//    @media (min-width: var.$tablet) {
-//      padding: 46px 0 46px 23px;
-//      gap: calc(var(--gap) * 3);
-//    }
-//    @media (min-width: var.$bigger-tablet) {
-//      padding: 46px 0 46px 33px;
-//      gap: calc(var(--gap) * 4);
-//    }
-//  }
-//
-//  &__content {
-//    display: flex;
-//    flex-direction: column;
-//    gap: calc(var(--gap) * 0.67);
-//  }
-//
-//  &__text {
-//    display: flex;
-//    flex-direction: column;
-//    gap: calc(var(--gap) * 1.67);
-//    br {
-//      display: none;
-//    }
-//    @media (min-width: var.$desktop) {
-//      display: block;
-//    }
-//  }
-//
-//  a {
-//    align-self: flex-start;
-//
-//    @media (min-width: var.$tablet) {
-//      p, h2, a{
-//        align-self: flex-start;
-//      }
-//    }
-//  }
-//}
