@@ -1,6 +1,7 @@
 .link {
   color: var(--black-color);
   transition: var(--transition);
+  cursor: pointer;
 
   &_white {
     color: var(--grey-color);

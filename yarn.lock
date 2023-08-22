@@ -112,6 +112,11 @@
   resolved "https://registry.yarnpkg.com/@esbuild/win32-x64/-/win32-x64-0.18.20.tgz#786c5f41f043b07afb1af37683d7c33668858f6d"
   integrity sha512-kTdfRcSiDfQca/y9QIkng02avJ+NCaQvrMejlsB3RRv5sE9rRoeBPISaZpKxHELzRxZyLvNts1P27W3wV+8geQ==
 
+"@fancyapps/ui@^5.0.22":
+  version "5.0.22"
+  resolved "https://registry.yarnpkg.com/@fancyapps/ui/-/ui-5.0.22.tgz#b11a567c68a2271296dd3e9aa2e2c7829022203a"
+  integrity sha512-44A5/Hm59mn53FqZRyM4HO/R7UWE79UxgNyHmaudSe+HuU5Kl1g6lxR4Ol1QFaqNS97Pbdytlu4SxYsOX1BTxw==
+
 anymatch@~3.1.2:
   version "3.1.3"
   resolved "https://registry.yarnpkg.com/anymatch/-/anymatch-3.1.3.tgz#790c58b19ba1720a84205b57c618d5ad8524973e"

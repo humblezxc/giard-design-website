@@ -61,7 +61,7 @@ header {
 
   .header__svg_tablet {
     display: none;
-
+    cursor: pointer;
     @media (min-width: var.$tablet) {
       display: inline;
     }
@@ -76,7 +76,7 @@ header {
       width: 120px;
       height: var(--top);
 
-      display: flex;
+      display: none;
       align-items: center;
       justify-content: center;
 
