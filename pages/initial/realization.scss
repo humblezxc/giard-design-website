@@ -22,22 +22,27 @@
     }
 
     @media (min-width: var.$desktop) {
-      padding: 120px 0 44px 0;
+      //padding: 120px 0 44px 0;
       gap: calc(var(--gap) * 4);
     }
 
   }
   &__gradient {
+    display: flex;
+    align-self: center;
     position: absolute;
     bottom: 0;
     height: 50%;
-    width: 100%;
+    width: calc(100% - var(--gap) * 2);
     content: "";
     background: linear-gradient(to top,
             rgba(220, 193, 171, 1) 10%,
             rgba(220, 193, 171, 0) 100%
     );
     visibility: visible;
+    @media (min-width: var.$bigger-mobile) {
+      width: inherit;
+    }
   }
 
   &__button {
@@ -59,12 +64,16 @@
     flex-direction: column;
     gap: calc(var(--gap) * 0.67);
 
+    @media (min-width: var.$bigger-mobile) {
+      padding: 40px 0 0 60px;
+    }
+
     @media (min-width: var.$tablet) {
-      padding-left: 80px;
+      padding: 80px 0 0 120px;
     }
 
     @media (min-width: var.$desktop) {
-      padding-left: 160px;
+      padding: 120px 0 0 160px;
     }
   }
 
