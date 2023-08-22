@@ -1,1 +1,1 @@
-web: yarn build
+web: web: bin/start-nginx-solo
