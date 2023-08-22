@@ -19,4 +19,7 @@
   @media (min-width: var.$biggest-desktop) {
     width: var.$biggest-desktop-container;
   }
+  @media (min-width: var.$huge-desktop) {
+    width: var.$huge-desktop-container;
+  }
 }

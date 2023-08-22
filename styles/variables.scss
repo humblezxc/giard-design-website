@@ -8,6 +8,7 @@ $bigger-tablet: 992px;
 $desktop: 1200px;
 $bigger-desktop: 1440px;
 $biggest-desktop: 1600px;
+$huge-desktop: 1900px;
 
 //containers
 $bigger-mobile-container: 310px;
@@ -16,20 +17,22 @@ $bigger-tablet-container: 740px;
 $desktop-container: 970px;
 $bigger-desktop-container: 1040px;
 $biggest-desktop-container: 1220px;
+$huge-desktop-container: 1420px;
+
 
 :root {
   //font
   --smallest-font: 400 8px 'Inter', sans-serif;
-  --smaller-font: 400 11px 'Inter', sans-serif;
-  --font: 400 12px 'Inter', sans-serif;
-  --font-biggest-desktop: 400 14px 'Inter', sans-serif;
-  --biggest-font: 500 28px 'Inter', sans-serif;
-  --bigger-font: 500 32px 'Inter', sans-serif;
-  --montserrat-smaller-font: 500 17px 'Montserrat', sans-serif;
-  --montserrat-regular: 400 28px 'Montserrat', sans-serif;
-  --montserrat-font: 500 32px 'Montserrat', sans-serif;
-  --montserrat-bigger-font: 500 42px 'Montserrat', sans-serif;
-  --montserrat-bigger-font-biggest-desktop: 500 52px 'Montserrat', sans-serif;
+  --smaller-font: 400 10px 'Inter', sans-serif;
+  --font: 400 11px 'Inter', sans-serif;
+  --font-biggest-desktop: 400 12px 'Inter', sans-serif;
+  --biggest-font: 500 22px 'Inter', sans-serif;
+  --bigger-font: 500 25px 'Inter', sans-serif;
+  --montserrat-smaller-font: 500 13px 'Montserrat', sans-serif;
+  --montserrat-regular: 400 22px 'Montserrat', sans-serif;
+  --montserrat-font: 500 25px 'Montserrat', sans-serif;
+  --montserrat-bigger-font: 500 32px 'Montserrat', sans-serif;
+  --montserrat-bigger-font-biggest-desktop: 500 38px 'Montserrat', sans-serif;
   // spacers
   --transition: 0.3s;
   --gap: 16px;
