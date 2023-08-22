@@ -1,6 +1,4 @@
 import Masonry from 'masonry-layout';
-import "./style.scss";
-import "./pages/initial/index.scss";
 
 const buttonToggle = document.querySelector('#toggle-button')
 buttonToggle.addEventListener('click', function onClick() {
