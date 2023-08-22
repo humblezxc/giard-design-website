@@ -29,4 +29,7 @@ header, main, footer {
   @media (min-width: var.$biggest-desktop) {
     width: 1520px;
   }
+  @media (min-width: var.$huge-desktop) {
+    width: 1640px;
+  }
 }
