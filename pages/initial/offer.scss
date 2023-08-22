@@ -92,18 +92,13 @@
     @media (min-width: var.$tablet) {
       flex-direction: row;
     }
-    @media (min-width: var.$bigger-tablet) {
-      //width: calc(100% - calc(var(--padding) * 2));
-      //gap: calc(var(--gap) * 1.3);
-    }
+
     @media (min-width: var.$desktop) {
       flex-wrap: nowrap;
-
-      //gap: calc(var(--gap) * 2);
       justify-content: space-between;
     }
+
     @media (min-width: var.$bigger-desktop) {
-      //gap: calc(var(--gap) * 2.67);
     }
   }
 
@@ -146,7 +141,7 @@
         display: block;
       }
     }
-    @media (min-width: var.$desktop) {
+    @media (min-width: var.$bigger-desktop) {
       padding: 48px 40px;
     }
   }
