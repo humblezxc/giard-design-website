@@ -1,4 +1,4 @@
-# Zadanie rekrutacyjne
+# Figma project
 ## giard-design-website
 
 How to run:
